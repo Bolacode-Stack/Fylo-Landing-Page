@@ -5,6 +5,7 @@
 }
 
 body {
+  max-width: 1440px;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
 }
@@ -47,7 +48,7 @@ li a {
 }
 
 .header {
-  min-height: 600px;
+  min-height: 700px;
 }
 
 /* Header */
@@ -125,10 +126,9 @@ input:focus {
 
 /* Curve Section */
 .section-fylo {
-  /* margin-top: 50px; */
   width: 100%;
-  height: 800px;
-  background: url(images/bg-curve-desktop.svg)no-repeat center / cover;
+  height: 700px;
+  background: url(images/bg-curve-desktop.svg)no-repeat center center / cover;
 }
 
 .section-fylo h1  {
@@ -214,70 +214,53 @@ input:focus {
   margin-bottom: 35px;
 }
 
-
-/* sub section */
-/* .sub-section {
-  padding: 0 130px;
-  color: #ffffff;
-  height: 369.71px;
-  background-color: #575988;
+/* Sub-section styling */
+.sub-section .wrapper {
+  display: grid;
+  top: 100px;
+  position: relative;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.sub-section {
+.left-section .section-input {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-} */
-
-/* .sub-section h1 {
+  column-gap: 50px;
+}
+.sub-section h1 {
+  color: #ffffff;
   font-size: 2rem;
-  margin-top: 2.5em;
   font-family: "Raleway", sans-serif;
 }
 
 .sub-section p {
-  line-height: 1.5;
+  color: #fff;
   font-size: 1rem;
   margin-top: 20px;
-} */
-
-/* .section-form {
-  top: 2rem;
-  left: 15rem;
-  position: relative;
-  margin-top: 2.5rem;
+  font-family: "Open Sans", sans-serif;
 }
 
-input[type="email"] {
-  margin: 20px 0;
-} */
-
-/* .section-form .section-input {
-  cursor: pointer;
-  padding: 7px 90px;
-}
-
-.btn {
-  border-radius: 5px;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  color: #ffffff;
-  padding: 10px 20px;
-  font-size: 14px;
-  background-color: #2f65f8;
+.sub-section {
+  padding: 15px;
+  min-height: 370px;
+  background-color: #575988;
   font-family: "Raleway", sans-serif;
-} */
-
-/* .btn:hover {
-  background-color: #6c9bff;
 }
 
-.section-form input::placeholder {
-  right: 4.5rem;
-  position: relative;
-} */
+.section-button {
+  margin-top: 20px;
+}
+
+.sub-section input[type='email'] {
+  padding: 15px 303px 15px 20px;
+}
+
+.section-input {
+  margin-left: 150px;
+}
+
 
 /* footer */
+
 /* .footer {
   height: 391px;
   width: 100%;
@@ -382,6 +365,10 @@ p img {
    height: 1.5rem; 
    }
 
+   .header {
+    min-height: 800px;
+   }
+
    .wrapper {
     margin: 0 auto;
     padding: 0 25px;
@@ -441,7 +428,7 @@ p img {
 
     /* Mobile Section */
     .section-fylo {
-      height: 1000px;
+      height: 950px;
     }
 
     .section-fylo .wrapper {
@@ -454,8 +441,8 @@ p img {
       font-size: 1rem;
     }
 
-    .section-fylo >  p {
-      /* color: #6157fe; */
+    .section-fylo   p {
+      color: #615f7e;
       text-align: center;
       font-size: 0.82rem;
     }
@@ -464,11 +451,11 @@ p img {
       font-size: 1rem;
       position: relative;
       text-align: center;
-      margin-top: 40px;
+      margin-top: 30px;
     }
 
     .left-column a {
-      top: 25px;
+      top: 20px;
       position: relative;
     }
 
@@ -486,6 +473,7 @@ p img {
     }
 
  .section-svg {
+  top: 60px;
   left: 10px;
   height: 241px;
    max-width: 320px;
@@ -495,23 +483,26 @@ p img {
     /* Mobile Card */
 
     .card-section {
+        top: 70px;
       height: 169px;
+      margin: auto;
+      position: relative;
       max-width: 280px;
-      margin-top: 70px;
-      margin-left: 22px;
     }
 
     .card {
-  background-position: top 22px left 27px;
+  background-position: top 22px left 43px;
     }
 
     .card p {
       font-size: 10px;
       text-align: center;
+      color: #07043b;
     }
 
     .sub-card {
-      left: 15px;
+      top: -10px;
+      left: 18px;
       position: relative;
     }
 
@@ -528,6 +519,52 @@ p img {
       height: 24px;
     }
 
+    /* Sub-section*/
+    .sub-section .wrapper {
+      display: flex;
+      /* min-height: 500px; */
+      flex-direction: column;
+    }
 
-}
+    .left-section {
+      bottom: 50px;
+      position: relative;
+      text-align: center;
+    }
+
+    .left-section h1 {
+      font-size: 18px;
+    }
+
+    .left-section p {
+      font-size: 14px;
+    }
+
+    .section-input {
+      top: -20px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .sub-section input[type='email'] {
+      border-color: #979797;
+   padding: 6.5px 62px 6.5px 20px;
+  }
+
+
+  .sub-section input::placeholder {
+    font-size: 10px;
+  }
+    
+  .section-button {
+    font-size: 10px;
+    font-weight: bold;
+    /* text-align: center; */
+    margin-top: 8px;
+   padding: 10px 72px 10px;
+
+
+    }
+
+  }
 
