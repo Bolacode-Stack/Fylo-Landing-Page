@@ -6,6 +6,7 @@
 
 body {
   font-weight: 400;
+  /* max-width: 1440px; */
   font-family: "Open Sans", sans-serif;
 }
 
@@ -24,7 +25,7 @@ body {
 }
 
 .wrapper {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 0 60px;
   max-width: 1500px;
 }
@@ -183,6 +184,7 @@ input:focus {
   margin-top: 35px;
   margin-left: 15px;
   font-size: 0.82rem;
+  /* background-position: fixed; */
 }
 
 .card-image {
